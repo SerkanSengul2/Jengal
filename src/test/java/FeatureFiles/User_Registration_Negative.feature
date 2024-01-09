@@ -3,7 +3,7 @@ Feature: User Registration Negative
   Background:
     Given  Navigate to site
     When The user should be able to click register button
-
+  @SmokeTest
   Scenario: User Registration Negative
     Then The user enters the same data again
     And The user click on the register button

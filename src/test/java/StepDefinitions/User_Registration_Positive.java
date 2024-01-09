@@ -21,14 +21,16 @@ public class User_Registration_Positive {
 
     @When("The user should be able to click register button")
     public void theUserShouldBeAbleToClickRegisterButton() {
+        ur.MyClick(ur.homePage);
+        ur.wait.until(ExpectedConditions.visibilityOf(ur.getAnOffer));
         actions.moveToElement(ur.getAnOffer).perform();
         ur.MyClick(ur.registerButton);
     }
 
     @Then("The user enter valid registration details")
     public void TheUserEnterValidRegistrationDetails() {
-        ur.MySendKeys(ur.userName, "TheUseR");
-        ur.MySendKeys(ur.eMail, "usercik2@gmail.com");
+        ur.MySendKeys(ur.userName, "TheUseR2");
+        ur.MySendKeys(ur.eMail, "userTesT1@gmail.com");
         ur.MySendKeys(ur.password, "TheUseR1234");
         ur.MySendKeys(ur.passwordConfirmation, "TheUseR1234");
         ur.MyClick(ur.checkBox);

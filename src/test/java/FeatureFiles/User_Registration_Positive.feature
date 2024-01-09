@@ -1,5 +1,5 @@
 Feature: User Registration Positive
-
+  @SmokeTest
   Scenario: Successful registration
     Given  Navigate to site
     When The user should be able to click register button
