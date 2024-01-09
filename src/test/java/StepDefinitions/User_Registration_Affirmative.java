@@ -10,7 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-public class User_Registration_Positive {
+public class User_Registration_Affirmative {
     User_Registration_POM ur = new User_Registration_POM();
     Actions actions = new Actions(DP.getDriver());
 
