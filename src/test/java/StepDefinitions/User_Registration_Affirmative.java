@@ -35,7 +35,7 @@ public class User_Registration_Affirmative {
     @Then("The user enter valid registration details")
     public void TheUserEnterValidRegistrationDetails() {
         ur.MySendKeys(ur.userName, "TheUseR2");
-        ur.MySendKeys(ur.eMail, "tester21@gmail.com");
+        ur.MySendKeys(ur.eMail, "TesterUser861@gmail.com");
         ur.MySendKeys(ur.password, "TheUseR1234");
         ur.MySendKeys(ur.passwordConfirmation, "TheUseR1234");
         ur.MyClick(ur.checkBox);
