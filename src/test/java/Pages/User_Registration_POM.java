@@ -10,11 +10,10 @@ public class User_Registration_POM extends Parent {
         PageFactory.initElements(DP.getDriver(), this);
     }
 
-    @FindBy(linkText ="Anasayfa")
-    public WebElement homePage;
-
-    @FindBy(xpath = "//a[normalize-space()='Teklif al']")
-    public WebElement getAnOffer;
+    @FindBy(xpath = "//span[normalize-space()='Hizmetler']")
+    public WebElement services;
+    @FindBy(xpath = "//a[@class='goModule nav-link'][contains(text(),'İletişim')]")
+    public WebElement connection;
     @FindBy(xpath = "//span[contains(text(),'Kayıt Ol')]")
     public WebElement registerButton;
     @FindBy(css = "[formcontrolname='name']")

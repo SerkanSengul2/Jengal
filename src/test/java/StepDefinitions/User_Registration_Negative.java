@@ -11,7 +11,7 @@ public class User_Registration_Negative {
     @Then("The user enters the same data again")
     public void theUserEntersTheSameDataAgain() {
         ur.MySendKeys(ur.userName, "TheUseR");
-        ur.MySendKeys(ur.eMail, "UserTesT12321@gmail.com");
+        ur.MySendKeys(ur.eMail, "tester21@gmail.com");
         ur.MySendKeys(ur.password, "TheUseR1234");
         ur.MySendKeys(ur.passwordConfirmation, "TheUseR1234");
         ur.MyClick(ur.checkBox);
